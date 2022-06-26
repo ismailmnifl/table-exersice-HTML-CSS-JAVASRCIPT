@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerice table modal</title>
+    <!-- my styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- poppings google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- font awsome 5 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- the hole page container it will be used to align all the items of the page -->
+    <div class="container">
+
+        <div id="table"></div>
+        <div id="footer">
+            <button id="myBtn">Ajouter utilisateur</button>
+        </div>
+    </div>
+    <!-- this the modal code -->
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="header">
+                <div class="title">
+                    <h1>Ajouter d'utilisateurs</h1>
+                </div>
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="body">
+                <div class="modalSection">
+
+                    <div class="inputGroup">
+                        <label for="nom">Nom</label>
+                        <input name="nom" type="text">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="nom">Nom d'utilisateur</label>
+                        <input name="nom" type="text">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="nom">Matricule</label>
+                        <input name="nom" type="text">
+                    </div>
+                </div>
+                <div class="modalSection">
+                    <div class="inputGroup">
+                        <label for="nom">Prénom</label>
+                        <input name="nom" type="text">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="nom">Date de création</label>
+                        <input name="nom" type="date">
+                    </div>
+                </div>
+                <div class="modalSection">
+                    <div class="inputGroup">
+                        <label for="nom">Etat</label>
+                        <input name="nom" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button class="btnEnregister">Enregistrer</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- here is import the data and the data file and the logic javasript file -->
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
